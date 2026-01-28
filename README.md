@@ -16,34 +16,34 @@ Or copy individual skills as needed.
 
 | Skill | Description |
 |-------|-------------|
-| `/complete-plan-and-merge` | Move plan to completed, merge to develop, cleanup branch |
+| `/list-ideas` | List all ideas in the ideas folder |
+| `/initial-prompt` | First prompt for exploration (no code editing) |
+| `/write-plan` | Write a new plan in plans folder |
+| `/review-plan` | Review plan against codebase |
+| `/next-phase` | Reply with next phase steps |
 | `/do-phase` | Implement a phase and commit |
 | `/execute-full-plan` | Implement all phases in a plan |
-| `/initial-prompt` | First prompt for exploration (no code editing) |
-| `/list-ideas` | List all ideas in the ideas folder |
-| `/next-phase` | Reply with next phase steps |
-| `/review-plan` | Review plan against codebase |
-| `/write-plan` | Write a new plan in plans folder |
+| `/complete-plan-and-merge` | Move plan to completed, merge to develop, cleanup branch |
 
 ## Usage
 
 After installation, invoke skills in Claude Code using the slash command syntax:
 
 ```
+/list-ideas
 /write-plan Add user authentication
 /do-phase Phase 1
-/list-ideas
 ```
 
 ## Project Structure Assumptions
 
 These skills assume a project workflow with:
 
+- `ideas/` - Directory for idea markdown files
 - `plans/` - Directory for implementation plans
 - `plans/completed/` - Directory for completed plans
-- `ideas/` - Directory for idea markdown files
 - `develop` - Main development branch
 
 ## License
 
-MIT
+This project is released under the MIT License. See the [LICENSE](https://github.com/DanielStormApps/claude-code-skills/blob/main/LICENSE) file for more information.
